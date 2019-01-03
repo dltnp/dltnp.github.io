@@ -1,29 +1,277 @@
-!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0031)http://paul.rutgers.edu/~ngoyal/ -->
+<HTML><HEAD><TITLE>COMP 531</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+<META content="Dec 14, 2005">
+<BODY text=black bgColor=white><FONT face=arial>
+<center><hl><FONT color=#3366ff size=+2>
+COMP 531:  Theory of Computation  (Winter 06)</FONT></hl></center>
+
+<p>
+<center>
+[<a href="#lectures"> Lectures: summary and links </a> ]
+[<a href="#assignments"> Assignments ]
+[<a href="#description"> Course description </a> ]
+[<a href="#links"> Links </a>]
+</center> 
+
+<br>
+<br>
+<strong>Time:</strong>  Tuesdays and Thursdays 11:35 AM - 12:55 PM
+<br>
+<strong>Place: </strong> McConnell Engineering Building 320 
+<br><br>
+
+<strong>Instructor: </strong> 	<A href="http://www.cs.mcgill.ca/~navin/">Navin Goyal </A><br>
+			  	email: first name followed by @cs.mcgill.ca <br>
+				office: McConnell 106 <br>
+				phone: (514) 398-7071 (ext. 0524) <br>
+				office hours: Tue 2:00--3:00 PM, and by appt
+<br><br>
+
+<strong>TA:  </strong>  Mark Mercer <br>
+			email: jmerce1 followed by @cs.mcgill.ca <br>
+				office: McConnell 106 <br>
+				phone: (514) 398-7071 (ext. 0524) <br>
+				office hours: Thu 2:00--3:00 PM, and by appt
+
+<HR width="100%">
+<a name="lectures">
+<strong>Lecture 1</strong> (Jan 3) (Most of this material can be found in Arora Chapters 1, 4 and Sipser Section 7.1) <br> 
+Quick recap of Turing Machines, Strong Church--Turing hypothesis, time and space complexity measures for TMs, simulation of
+multi-tape TM by single-tape TM, linear speed up for time and space. <br><br>
+
+<strong> Lecture 2 </strong>(Jan 5)  (Sipser Chapter 9, Arora Chapter 4) <br>
+Space and time hierarchy theorems.  Complexity classes P, NP, L,
+NL, PSPACE, EXP. 
+<br>
+<br>
+<strong> Lecture 3 </strong> (Jan 10) <br>
+Tentative outline: <br>
+Reductions.  Completeness.  P-completeness.   <br>
+(For the first three topics we mainly use Papadimitriou Chapter 8)
+<br>
+Wikipedia <A href="http://en.wikipedia.org/wiki/P-complete"> article </A> on P-complete problems
+<br>
+<br>
+<strong> Lecture 4 </strong>  (Jan 12) <br> 
+Nondeterminism.  NP.  Cook--Levin theorem.  NP-completeness. Self-reducibility.
+(Arora Chapter 2)
+<br>
+<br>
+<strong> Lecture 5 </strong> (Jan 17) <br>  
+Space complexity classes L, NL, PSPACE.  Complete problems for these classes. (Arora Chapter 3)
+<br>
+<br>
+<strong> Lecture 6 </strong> (Jan 19) <br>  
+ Savitch's theorem.  Immerman--Szelepcsenyi theorem.  (Arora Chapter 3)  
+<br><br>
+
+<strong> Lecture 7 </strong> (Jan 24) <br> 
+Nondeterministic time and space hierarchy theorems (Arora Chapter 4). Ladner's theorem (Papadimitriou Chapter 14). <br>
+A <A href="http://weblog.fortnow.com/media/ladner.pdf"> write-up  </A> of Fortnow on Ladner's theorem.  It contains two proofs of the theorem.  Proof we did in class resembled the first one a bit. 
+<br><br>
+
+
+<strong> Lecture 8 </strong> (Jan 26) <br> 
+Relativization (Arora Chapter 4; Papadimitriou Chapter 14).  Polynomial Hierarchy (Arora Chapter 5; Papadimitriou Chapter 17). <br>
+A <A href="http://ovid.cs.depaul.edu/documents/phcom.ps">  compendium </A>  of problems in the polynomial hierarchy (PH) by Schaefer and Umans
+<br><br>
+
+<strong> Lecture 9 </strong> (Jan 31) <br> 
+Continue with PH.  
+<br><br>
+
+
+<strong> Lecture 10 </strong> (Feb 02) <br> 
+Boolean Circuits.  Nonuniform complexity classes. (Arora Chapter 6)
+<br><br>
+
+<strong> Lecture 11 </strong> (Feb 07) <br> 
+Karp-Lipton theorem.  Classes NC, AC, and relationships with other complexity classes (Arora Chapter 6). 
+<br><br>
+
+<strong> Lecture 12 </strong> (Feb 09) <br> 
+Randomized computation.  Examples: decision trees, equality computation in two party communication model. Polynomial identity testing. (Arora Chapter 7)
+<br><br>
+
+
+<strong> Lecture 13 </strong> (Feb 14) <br> 
+Complexity classes RP, BPP, ZPP.  Error reduction by repetition. 
+Adleman's theorem: BPP is in P/poly.  Sipser--Lautemann theorem: BPP is in PH.
+<br><br>
+
+
+<strong> Lecture 14 </strong> (Feb 16) <br> 
+Randomized space complexity classes.  Undirected s-t connectivity is in RL.  Universal Hash Functions. 
+<br><br>
+
+<strong> Week of Feb 19. No Lectures: Study Break </strong><br><br>
+
+<strong> Week of Feb 26. No Lectures: Instructor away </strong><br>
+Reading assignment: Section 8.1 of Arora's book  
+<br><br>
+
+
+<strong> Lecture 15 </strong> (March 7) <br> 
+Application  of universal hash functions to randomness efficient error reduction.  Impagliazzo--Zuckerman generator  
+<br> The original <A href="http://www.cs.utexas.edu/users/diz/pubs/recycle.ps"> paper </A> (it's rather terse) <br>
+A <A href="http://www.math.ias.edu/~avi/BOOKS/TCS003-1.pdf"> monograph </A> by Luby and Wigderson on related matters  
+<br><br>
+A planned topic (but not covered due to lack of time): <br>
+Introduction to Expander graphs and their application to randomness efficient error reduction. (This material can be found, e.g. within the first 30 pages of the lecure notes <A href="http://www.math.ias.edu/~avi/TALKS/expander_course.pdf"> Expander Graphs and their Applications </A>by Hoory, Linial, and Wigderson)
+<br><br>
+
+<strong> Lecture 16 </strong> (March 9) <br> 
+Completing the proof of the Impagliazzo--Zuckerman result.  Pseudorandom generators.  
+Nisan--Wigderson pseudorandom generator (Chapter 18 of Arora's book). <br><br>  
+
+<strong> Lecture 17 </strong> (March 14) <br> 
+Completing the proof of the Nisan--Wigderson result.
+<br><br>
+
+<strong> Lecture 18 </strong> (March 16) <br> 
+Communication Complexity.  (Chapter 13 of Arora's book) 
+<br><br>
+
+
+<strong> Lecture 19 </strong> (March 21) <br> 
+(Lecture by Mark Mercer.  Instructor away) <br>
+AC0 circuits can't compute PARITY (even when augmented with MOD 3 gates).  A nice exposition of this material can be found 
+<A href="http://people.clarkson.edu/~alexis/PCMI/Notes/lectureB10.ps.gz"> here </A>.  See also Arora Chapter 18.2
+<br><br>
+
+<strong> Lecture 20 </strong> (March 23) <br> 
+(Lecture by Arkadev Chattopadhyay.  Instructor away) <br>
+Lower bounds for monotone circuits  (Arora Chapter 14.3)
+<br><br>
+
+<strong> Lecture 21  </strong> (March 28) <br>
+Interactive Proof Systems.  Arthur--Merlin protocols. (Arora Chapter 10) <br>
+The <A href="http://theory.cs.uchicago.edu/merlin/"> story </A> of the original discovery of Arthur--Merlin protocols. <br>
+And the <A href="http://ieeexplore.ieee.org/iel2/476/3369/00113952.pdf?arnumber=113952"> story </A> 
+of the modern rediscovery (this link might not work from outside the campus).  <br>
+Another <A href="http://www.cs.washington.edu/education/courses/cse533/CurrentQtr/pcp-history.pdf"> story </A> also discussing the subsequent developments including the PCP Theorem and complete with pictures of the cast of characters.
+<br><br> 
+
+<strong> Lecture 22  </strong> (March 30) <br>
+#P is in IP.  Multiprover interactive proof systems. (Arora Chapter 10) <br><br>
+
+<strong> Lecture 23 </strong> (April 4) <br>
+Introduction to Probabilistically Checkable Proofs.  Relation to multiprover
+interactive proof systems. 
+(Arora Chapter 19, Papadimitriou Chapter 13)<br>
+Section 3 of this <A href="http://people.cs.uchicago.edu/~fortnow/papers/mip.ps"> paper </A> contains the proof of MIP=PCP(poly(n), poly(n))<br>
+A <A href="http://www.nada.kth.se/~viggo/wwwcompendium/"> compendium </A> of NP optimization problems 
+<br><br> 
+
+<strong> Lecture 24 </strong> (April 6) <br>
+Remarks on the PCP theorem.  Application to Inapproximability results for 
+optimization problems.  <br>
+A <A href="http://www.cs.washington.edu/education/courses/cse533/CurrentQtr/"> course </A> on the PCP theorem and hardness of approximation  
+<br><br>
+
+
+<HR width="100%">
+<a name="assignments">
+<strong> Assignments: </strong> <br><br>
+<A href="http://www.cs.mcgill.ca/~navin/531/PS/1.pdf"> Assignment 1 </A> <br>
+<A href="http://www.cs.mcgill.ca/~navin/531/PS/2.pdf"> Assignment 2 </A>  <br>
+<A href="http://www.cs.mcgill.ca/~navin/531/PS/3.pdf"> Assignment 3 </A>  <br>
+<A href="http://www.cs.mcgill.ca/~navin/531/PS/4.pdf"> Assignment 4 </A> 
+<br><br>
+<HR width="100%">
+
  
+
+<a name="description">
+<strong>Course Description: </strong> 
+This is an introductory graduate course in <em>computational complexity</em>.
+We will study questions such as these:
+<br><br>
+<li>Can we prove that some computational problems require lot of time? </li>
+
+<li>Does having access to random coin help compute faster? </li>
+
+<li>Is it easier to find a solution than to count the number of solutions? </li>
+
+<li>Is it easier to find approximate solutions than to find exact solutions? </li>
+<br><br>
+
+This study suggests a rich web of complexity classes that classify the problems
+according to the computational resources (e.g., time, memory,
+randomness, parallelism) needed for their solutions.  
+In this course we will learn about some of these classes
+and how they are belived to relate with each other.  Many important
+parts of this picture are as yet unproven and filling these gaps constitutes
+some of the deepest and most important problems in computer science, of which P = NP? problem is the most famous example. 
+
+<br><br>
+Brief tentative list of topics: <br><br>
+<li>Time and space hierarchy theorems, nondeterminism, time and space complexity classes, 
+reductions, completeness</li>
+
+<li>Polynomial hierarchy</li>
+
+<li>Counting classes</li>
+
+<li>Randomized computation</li>
+
+<li>Interactive proofs</li>
+
+<li>Probabilistically checkable proofs and hardness of approximation</li>
+
+<li>Nonuniform computation and boolean circuits</li>
+
+<li>Undirected s-t connectivity in log space</li>
+
+<br><br>
+<strong>Prereqs:</strong> The formal prerequisite for the course is COMP 330 or
+an equivalent course in Automata and Computability.
+The course will involve a fair amount of mathematics, but this is all elementary: basic probability,
+algebra, and discrete math.  And of course, some knowledge of algorithms is important to appreciate 
+the course.  Please check with me if in doubt.
+
+<br><br>
+<strong>Grading:</strong> There will be bi-weekly homework assignments (a total of about 5).  
+
+<br><br>
+<strong>Text:</strong> We will loosely follow a <A href="http://www.cs.princeton.edu/~arora/book/book.html"> draft </A> of an upcoming book by <A href="http://www.cs.princeton.edu/~arora/">Sanjeev Arora</A>.
+I'll provide relevant material from the book.  The following two books
+are also useful and on reserve in Schulich library:  
+<A href="http://www.amazon.com/gp/product/0534950973/qid=1134581379/sr=2-2/ref=pd_bbs_b_2_2/002-9314348-4576843?s=books&v=glance&n=283155"><em>Introduction to the Theory of Computation</em></A>
+ by Sipser and <A
+ href="http://www.amazon.com/gp/product/0201530821/qid=1134581577/sr=2-1/ref=pd_bbs_b_2_1/002-9314348-4576843?s=books&v=glance&n=283155"><em>Computational Complexity</em></A> by Papadimitriou.  These books cover the basics in more detail
+than Arora's book.
+There are many excellent lecture notes available on the web.  If you
+want to have a detailed idea of what the course will be like, please
+refer to these notes.  
+
+
+<br><br>
+<a name="links">
+Links to some course notes on the web:
+<br>
+<li><A href="http://www.cs.berkeley.edu/~luca/notes/complexitynotes02.pdf"> Luca Trevisan </A></li>
+
+<li><A href="http://www.complexitytheory.com/complexityscribenotes.ps"> Steven Rudich and Avrim Blum </A></li>
+
+<li><A href="http://theory.csail.mit.edu/~madhu/ST05/"> Madhu Sudan </A></li>
+
+
+<HR width="100%">
+
+Misc. links:
+<br><br>
+<li><A href="http://eccc.uni-trier.de/eccc/"> Electronic Colloquium on Computational Complexity </A></li>
+<li><A href="http://qwiki.caltech.edu/wiki/Complexity_Zoo"> Complexity_Zoo Complexity Zoo - Qwiki  </A></li>
+<li><A href="http://weblog.fortnow.com/"> Computational Complexity Weblog </A></li>
+<li><A href="http://www.math.ias.edu/~avi/TALKS/expander_course.pdf"> Expander Graphs and their Applications by Hoory, Linial and Wigderson </A></li>
+<li><A href="http://www.win.tue.nl/~gwoegi/P-versus-NP.htm"> The P vs NP page </A></li>
+<li><A href="http://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/W06/w06.pdf">  P, NP and Mathematics - a computational complexity perspective </A> (This paper by Avi Wigderson serves as a good introduction to some of the most important developments in computational complexity) </li>
+
+</FONT>
+</BODY>
+</HTML>
+
